@@ -1,5 +1,5 @@
 * {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 header {
@@ -172,7 +172,7 @@ ul > li:hover {
 
 .gallery {
     background-color: #fff;
-    padding: 1.5% 4%;
+    padding: 30px 40px;
 }
 
 .gallery > div:nth-of-type(3) {
@@ -223,7 +223,7 @@ ul > li:hover {
 
 .tariff {
     background-color: rgba(175, 175, 175, .1);
-    padding: 2% 4%;
+    padding: 30px 40px;
 }
 
 .tariff h1 {
@@ -233,9 +233,151 @@ ul > li:hover {
     border-bottom: 7px solid rgb(41, 218, 176);
 }
 
-.tariff div {
+
+
+.tariff > div {
+    position: relative;
     width: 31.333%;
     height: 500px;
     border: 2px solid rgba(0, 0, 0, 0.25);
-    margin: 20px 3% 0 0;
+    margin: 75px 3% 0 0;
+    float: left;
+    background-color: #fff;
+}
+
+.tariff > div:last-child {
+    margin: 75px 0 0 0;
+}
+
+.tariff div > div {
+    position: absolute;
+    top: -8%;
+    left: 41%;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.tariff div > div > div {
+    position: absolute;
+    top: 23%;
+    left: 23%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 15px solid rgba(0, 0, 0, 0.25);
+}
+
+.tariff h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    color: rgb(41, 218, 176);
+    margin: 30px auto;
+    letter-spacing: -1px;
+}
+
+.tariff h3 {
+    color: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    text-align: right;
+    width: 130px;
+    height: 130px;
+    font-size: 24px;
+    margin: 30px auto;
+    letter-spacing: -1px;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    padding: 25px
+}
+
+.tariff p,
+.tariff span,
+.tariff h3 {
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+.tariff h3 {
+    font-size: 42px;
+}
+
+.tariff span:nth-of-type(1) {
+    vertical-align: middle;
+}
+
+.tariff span:nth-of-type(2),
+.tariff > div:nth-of-type(2) > h3 > span,
+.tariff > div:nth-of-type(3) > h3 > span {
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.tariff p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.tariff > div > p {
+    font-weight: 300;
+    text-align: center;
+    font-size: 24px;
+    line-height: 45px;
+    margin: 0px;
+    letter-spacing: 0px;
+}
+
+.tariff > div > p:nth-of-type(odd) {
+    background-color: rgba(117, 117, 117, 0.25);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.tariff > div > p:nth-of-type(2n+2) {
+    background-color: rgba(117, 117, 117, 0.1);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.tariff > div > button {
+    position: absolute;
+    bottom: 20px;
+    left: 34%;
+    outline: 0;
+    border-radius: 5px;
+    background-color: rgb(41, 218, 176);
+    color: #fff;
+    border: none;
+    padding: 5px 25px 5px 25px;
+    font-size: 16px;
+}
+
+.tariff > div:hover h2 {
+    color: #fff;
+}
+
+.tariff > div:hover > div,
+.tariff > div:hover {
+    border-color: rgb(41, 218, 176);
+    background-color: rgb(41, 218, 176);
+}
+
+.tariff > div:hover > div > div {
+    border-color: #fff;
+}
+
+.tariff > div:hover > button,
+.tariff > div:hover > h3 {
+    background-color: #fff;
+    border-color: rgb(41, 218, 176);
+    color: rgb(41, 218, 176);
+}
+
+.tariff > div:hover > p:nth-of-type(odd) {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.tariff > div:hover > p:nth-of-type(2n+2) {
+    background-color: rgb(242, 242, 242);
+    color: rgba(0, 0, 0, 0.5);
 }
