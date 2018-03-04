@@ -456,3 +456,27 @@ ul > li:hover {
 .contact input:focus, textarea:focus {
     box-shadow: 0 0 10px 0 rgb(41, 218, 176);
 }
+
+.footer {
+    background-color: #fff;
+    padding: 40px 60px;
+}
+
+.footer > p {
+    float: left;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+    letter-spacing: 1px;
+}
+
+.footer > div {
+    float: right;
+}
+
+.footer > div > p {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 10px 10px 0 80px;
+    float: right;
+    font-size: 22px;
+}
