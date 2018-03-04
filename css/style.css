@@ -101,23 +101,21 @@ ul > li:hover {
     width: 10%;
     line-height: 341px;
     color: rgb(41, 218, 176);
-    font-size: 85px;
-    font-weight: 700;
-    padding: 0 5% 0 3%;
+    font-size: 50px;
+    padding: 0 2% 0 2%;
 }
 
 .prevSlide:hover,
 .nextSlide:hover {
     background: linear-gradient(to bottom, white, rgba(175, 175, 175, .5));
     cursor: pointer;
+    color: #18c9a0;
 }
-
 .prevSlide:hover {
-    box-shadow: 1px 4px 5px 0 rgba(175, 175, 175, .3);
+    box-shadow: 1px 4px 2px 0 rgba(175, 175, 175, .3);
 }
-
 .nextSlide:hover {
-    box-shadow: -1px 4px 5px 0 rgba(175, 175, 175, .3);
+    box-shadow: -1px 4px 2px 0 rgba(175, 175, 175, .3);
 }
 
 .prevSlide {
@@ -130,27 +128,44 @@ ul > li:hover {
     text-align: right;
 }
 
+.slide img {
+    margin: 0 auto;
+    display: block;
+    max-width: 40%;
+    height: auto;
+    float: left;
+}
+
 .title {
     padding: 50px 50px 50px 0px;
     width: 40%;
-    float:left;
+    float: left;
 }
 
 .title h1 {
     font-size: 38px;
 }
+
 .title p {
-    line-height: 22px;
-    margin-top: 50px;
+    font-size: 15px;
+    line-height: 28px;
+    margin: 25px auto;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.75);
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.title > button {
+    font-size: 22px;
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    outline: 0;
+    margin: 0 auto;
+    background-color: rgb(41, 218, 176);
 }
 
-.imgBox {
-    float: left;
-    width: 40%;
-    height: 100%;
+.title > button:hover {
+    background-color: #18c9a0;
 }
