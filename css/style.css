@@ -166,13 +166,14 @@ ul > li:hover {
     background-color: rgb(41, 218, 176);
 }
 
+.contact button:hover,
 .title > button:hover {
     background-color: #18c9a0;
 }
 
 .gallery {
     background-color: #fff;
-    padding: 30px 40px;
+    padding: 40px 80px;
 }
 
 .gallery > div:nth-of-type(3) {
@@ -223,17 +224,16 @@ ul > li:hover {
 
 .tariff {
     background-color: rgba(175, 175, 175, .1);
-    padding: 30px 40px;
+    padding: 40px 80px 80px 80px;
 }
 
+.contact h1,
 .tariff h1 {
     width: 31.333%;
     color: rgba(0, 0, 0, 0.50);
     font-size: 22px;
     border-bottom: 7px solid rgb(41, 218, 176);
 }
-
-
 
 .tariff > div {
     position: relative;
@@ -380,4 +380,79 @@ ul > li:hover {
 .tariff > div:hover > p:nth-of-type(2n+2) {
     background-color: rgb(242, 242, 242);
     color: rgba(0, 0, 0, 0.5);
+}
+
+.contact {
+    background-color: #fff;
+    padding: 40px 80px;
+}
+
+.contact h1 {
+    margin: 0 0 45px 0;
+}
+
+.contact div:first-child {
+    width: 65%;
+    height: auto;
+    float: left;
+    padding: 0 40px 0 0;
+}
+
+.contact input, textarea {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    border: 1px solid rgb(41, 218, 176);
+    outline: 0;
+    font-size: 28px;
+    padding: 15px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0 0 25px 0;
+}
+
+.contact textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact div:last-child {
+    width: 35%;
+    height: auto;
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.contact img {
+    margin: 0 10px 30px 0px;
+}
+
+.contact div > div > img {
+    padding: 5px;
+    float: left;
+    border: 1px solid rgb(41, 218, 176);
+}
+
+.contact span {
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.contact button {
+    display: block;
+    border: none;
+    background-color: rgb(41, 218, 176);
+    color: #fff;
+    font-size: 28px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin: 25px 0 0 0;
+    font-weight: bold;
+}
+
+
+.contact input:focus, textarea:focus {
+    box-shadow: 0 0 10px 0 rgb(41, 218, 176);
 }
