@@ -1,0 +1,156 @@
+* {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    width: 100%;
+    line-height: 40px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.menu {
+    max-height: 40px;
+    background-color: #000;
+    color: #fff;
+}
+
+header h1 {
+    float: left;
+    font-size: 14px;
+    padding: 0 0 0 5%;
+}
+
+.title h1 > span,
+header h1 > span {
+    color: rgb(41, 218, 176);
+    font-weight: 700;
+}
+
+nav {
+    float: right;
+    padding: 0 5% 0 0;
+    position: relative;
+}
+
+ol, ul {
+    text-align: center;
+    list-style: none;
+}
+
+li {
+    width: 130px;
+}
+
+ol > li {
+    float: left;
+    font-weight: 700;
+}
+
+ol ul {
+    display: none;
+}
+
+ul > li:first-child {
+    margin: -5% auto 0 auto;
+    border: 10px solid transparent;
+    border-bottom-color: #000;
+    width: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+ul > li:nth-child(1n+2) {
+    background-color: #000;
+    line-height: 5px;
+    padding: 15px 0 15px 0;
+}
+
+ol > li:nth-of-type(1):hover > ul,
+ol > li:nth-of-type(2):hover > ul,
+ol > li:nth-of-type(3):hover > ul {
+    display:block;
+}
+
+ul > li:first-child:hover {
+    background-color: rgba(255, 255, 255, 0);
+    cursor: default;
+}
+
+ul > li:hover {
+    background-color: rgba(41, 218, 176, 0.9);
+    cursor: pointer;
+}
+
+.slide {
+    background: linear-gradient(to bottom, white, rgba(175, 175, 175, .5));
+    margin: 120px auto 0 auto;
+    text-align: center;
+}
+
+.prevSlide,
+.nextSlide {
+    width: 10%;
+    line-height: 341px;
+    color: rgb(41, 218, 176);
+    font-size: 85px;
+    font-weight: 700;
+    padding: 0 5% 0 3%;
+}
+
+.prevSlide:hover,
+.nextSlide:hover {
+    background: linear-gradient(to bottom, white, rgba(175, 175, 175, .5));
+    cursor: pointer;
+}
+
+.prevSlide:hover {
+    box-shadow: 1px 4px 5px 0 rgba(175, 175, 175, .3);
+}
+
+.nextSlide:hover {
+    box-shadow: -1px 4px 5px 0 rgba(175, 175, 175, .3);
+}
+
+.prevSlide {
+    float: left;
+    text-align: left;
+}
+
+.nextSlide {
+    float: right;
+    text-align: right;
+}
+
+.title {
+    padding: 50px 50px 50px 0px;
+    width: 40%;
+    float:left;
+}
+
+.title h1 {
+    font-size: 38px;
+}
+.title p {
+    line-height: 22px;
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgBox {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
