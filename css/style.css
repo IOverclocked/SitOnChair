@@ -2,6 +2,16 @@
     font-family: 'Raleway', sans-serif;
 }
 
+a:link {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+a:visited {
+    color: #fff;
+}
+
 header {
     width: 100%;
     line-height: 40px;
@@ -33,7 +43,7 @@ header h1 {
 .title h1 > span,
 header h1 > span {
     color: rgb(41, 218, 176);
-    font-weight: 700;
+    font-weight: bold;
 }
 
 nav {
@@ -451,7 +461,6 @@ ul > li:hover {
     margin: 25px 0 0 0;
     font-weight: bold;
 }
-
 
 .contact input:focus, textarea:focus {
     box-shadow: 0 0 10px 0 rgb(41, 218, 176);
