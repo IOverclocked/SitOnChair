@@ -175,15 +175,16 @@ ul > li:hover {
     padding: 1.5% 4%;
 }
 
-.gallery > div {
-    width: 33.333%;
+.gallery > div:nth-of-type(3) {
+    width: 31.333%;
     float: right;
     border: 1px solid rgba(0, 0, 0, 0.25);
     padding: 30px;
 }
 
 .gallery h1 {
-    border-bottom: 5px solid rgb(41, 218, 176);
+    color: rgba(0, 0, 0, 0.85);
+    border-bottom: 7px solid rgb(41, 218, 176);
     width: 50%;
     font-weight: 700;
 }
@@ -195,8 +196,46 @@ ul > li:hover {
     font-size: 15px;
 }
 
-.gallery img {
-    width: 33.333%;
+.gallery .boxImg {
+    position: relative;
+    width: 31.333%;
     margin: 0 auto;
-    padding: 0 3% 0 0;
+    margin: 0 3% 0 0;
+    float: left;
+    height: 225px;
+}
+
+.gallery .boxImg > div {
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.52);
+}
+.gallery .boxImg:nth-of-type(1) {
+    background: url('../images/box1_img.jpg');
+}
+
+.gallery .boxImg:nth-of-type(2) {
+    background: url('../images/box2_img.jpg');
+}
+
+.tariff {
+    background-color: rgba(175, 175, 175, .1);
+    padding: 2% 4%;
+}
+
+.tariff h1 {
+    width: 31.333%;
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 22px;
+    border-bottom: 7px solid rgb(41, 218, 176);
+}
+
+.tariff div {
+    width: 31.333%;
+    height: 500px;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    margin: 20px 3% 0 0;
 }
