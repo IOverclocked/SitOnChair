@@ -1,0 +1,20 @@
+@mixin btn($color-bg, $color-font, $width, $font-size) {
+    border-radius: 15px;
+    background-color: $color-bg;
+    width: $width;
+    font-size: $font-size;
+    color: $color-font;
+    outline: 0;
+    border: none;
+    padding: 15px;
+    font-weight: 700;
+}
+@mixin btn-hover($color) {
+    background-color: $color;
+}
+@mixin title() {
+    border-bottom: 7px solid $global-color;
+    color: $font-color2;
+    font-weight: 700;
+    width: 50%;
+}
