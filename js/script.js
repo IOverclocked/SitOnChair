@@ -1,35 +1,23 @@
-document.addEventListener('DOMContentLoaded', function(){
+$(function() {
 
-
-    var hamburger = document.querySelector('.icon-menu'),
-        menuCategory = document.querySelectorAll('.menu > ul > li'),
-        menuSubcategory = [],
+    let hamburger = $('.icon-menu'),
+        menuCategory = $('.menu > ul > li'),
+        menuSubcategory = $('.menu > ul li').find('ul'),
         menu = $('.menu'),
         subcategoryBox = $('.menu > ul ul');
 
-
-    hamburger.addEventListener('click', function(){
+    hamburger.on('click', function() {
         menu.slideToggle();
         subcategoryBox.slideUp();
     })
 
-    menuCategory.forEach(function(li){
-        li.addEventListener('click', function(){
-            var $this = $(this).children().last();
-            $this.slideToggle();
-        })
-        menuSubcategory.push(li.lastElementChild.children);
+    menuCategory.on('click', function() {
+        $(this).children().last().slideToggle();
     })
 
-    for(let i=0; i<menuSubcategory.length; i++){
-        for(let j=0; j<menuSubcategory[i].length; j++){
-            menuSubcategory[i][j].addEventListener('click', function(e){
-                e.stopPropagation();
-                subcategoryBox.slideUp();
-                menu.slideUp();
-            })
-        }
-    }
-
+    menuSubcategory.on('click', function(e) {
+        e.stopPropagation();
+        subcategoryBox.slideUp();
+    })
 
 })
