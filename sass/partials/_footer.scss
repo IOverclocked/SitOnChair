@@ -24,7 +24,7 @@ footer {
         }
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 720px) {
     footer {
         padding: 1em;
         margin: 0 auto;
@@ -33,9 +33,9 @@ footer {
         grid-template-columns: repeat(22, 1fr);
 
         p {
-            grid-column: 2/15;
+            grid-column: 2/16;
             grid-row: 1;
-            font-size: 1.2em;
+            font-size: 1em;
         }
 
         div {
@@ -43,7 +43,7 @@ footer {
             grid-row: 1;
 
             span {
-                font-size: 1.3em;
+                font-size: 1em;
                 padding: 0 0 1em 1em;
             }
         }
