@@ -54,7 +54,7 @@
         }
     }
 }
-@media (min-width: 1124px) {
+@media (min-width: 911px) {
     #news {
         max-width: 1200px;
         margin: 0 auto;
@@ -84,6 +84,11 @@
                     h1 {
                         @include title();
                     }
+
+                    p {
+                        font-size: 0.1em;
+                        padding: 0 0 1em;
+                    }
                 }
             }
         }
@@ -99,12 +104,12 @@
 
             p {
                 font-size: 0.9em;
-                padding: 0 0 1em;
+                margin: 10% 0 0;
             }
         }
     }
 }
-@media (max-width: 1123px) and (min-width: 720px) {
+@media (max-width: 910px) and (min-width: 720px) {
     #news {
         .news-img {
             &:nth-child(1) {
