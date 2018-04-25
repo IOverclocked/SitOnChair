@@ -15,6 +15,7 @@
             align-items: flex-end;
 
             div {
+                transition: .5s;
                 padding: 1em;
                 background-color: $title-color;
                 width: 100%;

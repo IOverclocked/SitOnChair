@@ -20,6 +20,43 @@ $(function() {
         subcategoryBox.slideUp();
     })
 
-    
+
+    let btnPrev = $('.slider-prev');
+    let btnNext = $('.slider-next');
+    let chair = ["black_chair", "red_chair"];
+    let counter = 0;
+
+    btnPrev.on('click', function() {
+        counter++;
+
+        if(counter >= chair.length) {
+            counter = 0
+        }
+
+        $('.slider-images-box').css({
+            background: "url(images/"+chair[counter]+".png) no-repeat center"
+        })
+
+    })
+
+    btnNext.on('click', function() {
+        counter--;
+
+        if(counter < 0) {
+            counter = chair.length-1;
+        }
+
+        $('.slider-images-box').css({
+            background: "url(images/"+chair[counter]+".png) no-repeat center"
+        })
+    })
+
+    $('.news-img').on('mouseover', function() {
+        $(this).find('div').hide();
+    })
+    $('.news-img').on('mouseout', function() {
+        $(this).find('div').show();
+    })
+
 
 })
