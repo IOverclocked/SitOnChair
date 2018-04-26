@@ -52,10 +52,14 @@ $(function() {
     })
 
     $('.news-img').on('mouseover', function() {
-        $(this).find('div').hide();
+        $(this).find('div').css({
+            opacity: "0"
+        });
     })
     $('.news-img').on('mouseout', function() {
-        $(this).find('div').show();
+        $(this).find('div').css({
+            opacity: "1"
+        });
     })
 
 
